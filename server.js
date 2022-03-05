@@ -8,7 +8,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 mongoose.connect("mongodb://localhost/social-media-startup", {
-  useFindAndModify: false,
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
